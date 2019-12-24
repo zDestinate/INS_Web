@@ -22,4 +22,6 @@ Get nodejs here https://nodejs.org/en/
 3) Use cmd or terminal to locate the folder then use `npm install` to install the dependencies<br>
 4) Once you finish install the dependencies just type `npm start` to start the web server.<br><br>
 
-If you want to change the page or edit anything, it will be locate in the `main.js` file. If you want to add some new page and other stuff, then you should understand how [nodejs express](https://expressjs.com/) works.
+If you want to change the page or edit anything, it will be locate in the `main.js` file. If you want to add some new page and other stuff, then you should understand how [nodejs express](https://expressjs.com/) works.<br><br>
+
+You can also use this webserver as FastDL for Insurgency.

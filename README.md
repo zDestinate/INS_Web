@@ -4,7 +4,7 @@ Original website link:<br>
 http://insurgency.pro/<br><br>
 
 This website require nodejs to run.<br>
-Get nodejs here https://nodejs.org/en/<br><br>
+Get nodejs here https://nodejs.org/en/
 
 ### Dependencies
 ```

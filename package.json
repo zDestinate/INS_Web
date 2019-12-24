@@ -1,0 +1,20 @@
+{
+  "name": "insurgency",
+  "version": "1.0.0",
+  "description": "insurgency server info",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot-emc": "^0.1.2",
+    "express": "^4.15.2",
+    "gamedig": "^0.2.28",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "serve-index": "^1.8.0",
+    "vmsq": "^2.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+<!-- Meta -->
+{{? it.GameFound == "true"}}
+<meta property="og:title" content="{{=it.hostname}}" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Connect to {{=it.ip}}:{{=it.port}} and start playing with us. Right now, server has {{=it.totalplayers}} out of {{=it.maxplayers}} players." />
+<meta property="og:site_name" content="[INS] Insurgency" />
+{{??}}
+<meta property="og:title" content="[INS] Server Website" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Look up server information in this website. You can see who online in that server and more." />
+<meta property="og:site_name" content="[INS] Insurgency" />
+{{?}}
+<meta name="keywords" content="ins,insurgency,coop,op,bot,bots,hardcore,discord,custom,server,[ins]">
+
+<!-- Include header files -->
+<link rel="stylesheet" href="/css/global.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108621941-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108621941-1');
+</script>

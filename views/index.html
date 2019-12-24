@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insurgency</title>
+		{{#def.include('includes/global')}}
+	</head>
+	<body>
+		{{#def.include('includes/nav')}}
+		<div class="server-info">
+			<div class="content-title">Lookup Server</div>
+			<div class="content-desc">
+				<font>How to use?</font><br>
+				Simply just put any insurgency server IP and port in the textbox then click on the lookup button.<br><br>
+				Default port for insurgency is 27015.<br>
+				You can also use this for sandstorm server.<br><br>
+				If you're running multiple instance with the same IP address, its best to put your port in.
+				<input type="text" id="ip" name="ip" placeholder="108.61.136.218:27015" />
+				<a href="" class="connectto" onclick="this.href='/server/'+document.getElementById('ip').value">Lookup</a>
+			</div>
+		</div>
+	</body>
+</html>

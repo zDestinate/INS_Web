@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insurgency</title>
+		{{#def.include('includes/global')}}
+	</head>
+	<body>
+		{{#def.include('includes/nav')}}
+		<div class="server-info">
+			<div class="content-title">Server Information</div>
+			{{? it.GameFound == "true"}}
+			<div class="server-status-online">Online</div>
+			<div class="content-desc">
+				<font>Hostname:</font> {{=it.hostname}}<br>
+				<font>Server:</font> {{=it.servertype}}<br>
+				<font>IP:</font> {{=it.ip}}<br>
+				<font>Port:</font> {{=it.port}}<br>
+				{{? it.customtheater != "none"}}
+				<font>Custom Theater:</font> {{=it.customtheater}}<br>
+				{{?}}
+				<font>Map:</font> {{=it.map}}<br><br>
+				
+				<font>Password Protected:</font> {{=it.passwordprotected}}<br>
+				<font>Friendly Fire:</font> {{=it.friendlyfire}}<br>
+				<font>BattlEye:</font> {{=it.battleye}}<br>
+				<font>VAC Secure:</font> {{=it.vacsecure}}<br><br>
+				
+				<font>Players:</font> {{=it.totalplayers}}/{{=it.maxplayers}}<br>
+				<font>Player List:</font><br>
+				{{~it.playerlist :value:index}}
+					{{=value}}<br>
+				{{~}}
+				<a href="{{=it.connectto}}" class="connectto">Connect Now</a>
+			</div>
+			{{?? it.GameFound == "our_false"}}
+			<div class="server-status-offline">Offline</div>
+			<div class="content-desc">
+				Unable to retrieve server information.<br>
+				Perhap our server is under maintenance.<br>
+				For more information for our server, join our discord!
+				<a href="https://discord.gg/H4JBPk2" target="_blank" class="discord">Open Discord</a>
+			</div>
+			{{??}}
+			<div class="server-status-offline">Offline</div>
+			<div class="content-desc">
+				Unable to retrieve server information.<br>
+				Looks like server is down or it doesn't exist!<br><br>
+				If you can contact the server administrator, please tell them to fix it.<br>
+				Otherwise, you should play another server.<br><br>
+				<font>NOTE:<font> This server you have searched does not belong to us!
+			</div>
+			{{?}}
+		</div>
+	</body>
+</html>

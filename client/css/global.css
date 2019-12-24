@@ -1,0 +1,166 @@
+/**
+	CSS StyleSheet
+	Created by Circleus
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+nav{
+	height: 50px;
+	width: 100%;
+	background: white;
+	box-shadow: 0 0 15px #676767;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+nav ul li{
+	float: left;
+	height: 100%;
+}
+
+nav a{
+	color: black;
+	height: 100%;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 23px;
+	padding: 11px 40px;
+	line-height: 45px;
+	transition: background-color 1s, color 1s;
+	-webkit-transition: background-color 1s, color 1s;
+	-moz-transition: background-color 1s, color 1s;
+	-o-transition: background-color 1s, color 1s;
+}
+
+nav a:hover{
+	background-color: black;
+	color: white;
+}
+
+.server-info{
+	color: white;
+	padding-top: 100px;
+	width: 600px;
+	margin: auto;
+}
+
+.content-title{
+	display: inline-block;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 35px;
+	vertical-align: middle; 
+}
+
+.server-status-online{
+	display: inline-block;
+	color: white;
+	background-color: #51cc00;
+	border-radius: 5px;
+	margin-left: 10px;
+	padding: 3px 0;
+	width: 70px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: light;
+	text-align: center;
+}
+
+.server-status-offline{
+	display: inline-block;
+	color: white;
+	background-color: #d40000;
+	border-radius: 5px;
+	margin-left: 10px;
+	padding: 3px 0;
+	width: 70px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: light;
+	text-align: center;
+}
+
+.content-desc
+{
+	color: white;
+	margin-top: 20px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+}
+
+.content-desc font{
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+input[type=text]{
+	margin-top: 20px;
+	width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border: 2px solid #3d9900;
+}
+
+input[type=text]:focus{
+	border: 2px solid #4dc100;
+	outline: none;
+}
+
+.discord{
+	display: block;
+	color: white;
+	text-decoration: none;
+	background-color: #7289da;
+	font-size: 16px;
+	font-family: Arial;
+	text-align: center;
+	border-radius: 5px;
+	width: 130px;
+	margin-top: 20px;
+	padding: 5px 0;
+}
+
+.discord:hover{
+	background-color: #677bc4;
+}
+
+.connectto
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	background-color: #3d9900;
+	font-size: 16px;
+	font-family: Arial;
+	text-align: center;
+	border-radius: 5px;
+	width: 200px;
+	margin: 30px auto;
+	padding: 5px 0;
+}
+
+.connectto:hover
+{
+	background-color: #4dc100;
+}

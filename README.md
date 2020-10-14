@@ -1,7 +1,7 @@
 # INS Website
 A simple website using steam server query and nodejs to check insurgency and sandstorm server status. The website also provide APIs for user to use.<br>
 Original website link:<br>
-http://insurgency.pro/<br><br>
+http://ins.circleus.tech/<br><br>
 
 This website require nodejs to run.<br>
 Get nodejs here https://nodejs.org/en/
